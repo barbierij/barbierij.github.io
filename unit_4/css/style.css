@@ -1,0 +1,60 @@
+h1 {
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 24px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+
+.menu {
+	font-family: 'Spinnaker', sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+a.name:link, .menu li a:link, .menu li a:link, .grid a {
+	color: #2c2c2c;
+	text-decoration: none;
+}
+
+a.name:hover, a.name:active {
+	color: #DCDCDC;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu li a:hover, .menu li a:active {
+	display: inline-block;
+	color: #DCDCDC;
+	background-color: #F7F7F7;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.grid {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Spinnaker', sans-serif;
+	padding: 100px;
+	background-color: #2c2c2c;
+}
+
+.grid a, a:hover, a:active {
+	color: #ffffff;
+}
+
+.social {
+    text-align:center;
+    padding-top: 50px;
+ }
+
+.social a {
+	padding: 5px
+}
