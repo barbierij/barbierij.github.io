@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,500italic,600,600italic);
-
-
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-	width: 1200px
-	margin: 40px, auto;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 }
@@ -63,3 +60,19 @@ footer {
  	margin-right: 20px;
  	max-height: 10px;
  }
+.project {
+	border:1px solid;
+	float:left;
+	position:relative;
+	width:50%;
+}
+.project img {
+	width:100%;
+}
+.project h2 {
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	transform:translateY(-50%);
+}
