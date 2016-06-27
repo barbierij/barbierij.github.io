@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,500italic,600,600italic);
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+header{
+	padding:40px 100px;
+	background-color: #FFED74;
+    border: 1px black solid;
+}
+
+nav {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	letter-spacing: -.5px;
+	text-transform: uppercase;
+	background-color: #E8C66A;
+    border: 1px black solid;
+}
+
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	letter-spacing: -.5px;
+	color: #2c2c2c;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+
+.navlinks {
+	display: inline-block;
+	color: #2c2c2c;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+nav a:hover, a:active  {
+	color: #DCDCDC;
+	border-bottom: thin solid;
+}
+
+main {
+	letter-spacing: -.5px;
+	text-transform: uppercase;
+	background-color: #FFE2B8;
+    border: 1px black solid;
+}
+
+.project {
+	border:1px solid;
+	float:left;
+	position:relative;
+	width:50%;
+}
+
+.project img {
+	width:100%;
+}
+
+.project h2 {
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	transform:translateY(-50%);
+	font-size: 20px;
+	color: #2c2c2c;
+}
+
+
+#two_column {
+    background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.left {
+ 	background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+.right {
+    background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 62%;
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+footer {
+	clear: both;
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-color: #FF957E;
+    border: 1px black solid;
+ }
+
+
+  .footerlinks img {
+ 	width: 3%;
+ 	transform:translateY(-50%);
+ 	margin-right: 10px;
+ }
