@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,500italic,600,600italic);
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+
+header{
+	padding: 2.5em 6.25em;
+}
+
+nav {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	letter-spacing: -.03125em;
+	text-transform: uppercase;
+}
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	letter-spacing: -.03125em;
+	color: #2c2c2c;
+	text-decoration: none;
+	margin-right: 1em;
+}
+
+.navlinks {
+	display: inline-block;
+	color: #2c2c2c;
+	text-decoration: none;
+	margin-right: .75em;
+}
+
+nav a:hover, a:active  {
+	color: #DCDCDC;
+}
+
+.grid {
+	padding: 0;
+	margin: 0;
+}
+
+.project {
+	float:left;
+	position:relative;
+	width: 50%;
+	background-color: #2c2c2c;
+
+}
+
+.project img {
+	width: 100%;
+}
+
+.project:hover > img {
+	opacity: 0.2;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.project h2 {
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	—webkit—transform:translateY(-50%);
+	—moz—transform:translateY(-50%);
+	—o—transform:translateY(-50%);
+	transform:translateY(-50%);
+	display: none;
+}
+
+.project:hover > h2 {
+	display: block;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+    padding: 3em 0;
+    margin: auto;
+
+ }
+
+ .button {
+ 	background-color: #93a551;
+    border: none;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.button a {
+	text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.375em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+}
+
+.button:hover {
+	background-color: #dcdcdc;
+}
+
+.footersvg img{
+	width: 2.25%;
+	padding-top: .75em;
+	margin-right: .5em;
+}
+
+
+ @media only screen and (min-width: 1800px) {
+ 	.project {width: 33.33%;
+ 	}
+}
+
+ @media only screen and (max-width: 1024px) {
+ 	.project h2 {
+ 		display: block;
+ 		background-color: rgba(44,44,44,.75);
+ 		color: #ffffff;
+ 		padding: .375em;
+ 	}
+
+ 	.project:hover > img {
+		opacity: 1;
+	}
+
+ @media only screen and (max-width: 800px) {
+ 	.project {
+ 		width: 100%;
+ 	}
+}
+
+ @media only screen and (max-width: 665px) {
+ 	.logo {
+ 		display: block;
+ 		text-align: center;
+ 		margin-right: 0;
+ 	}
+ 	.navlinks {
+ 		display: block;
+ 		text-align: center;
+ 		margin-right: 0;
+	}
+	header {
+		padding: 2.25em 0;
+}
+	footer {
+		padding: 2.25em 0;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+ 	.logo {
+ 		font-size: 1em;
+	}
+	header {
+		padding: 1.5em 0;
+}
+	footer {
+		padding: 1.5em 0;
+	}
+}
