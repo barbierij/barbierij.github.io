@@ -210,36 +210,33 @@ hr {
 }
 	.projectimages {
 	float: none;
-}
+	}
 }
  @media only screen and (max-width: 1024px) {
  	.project h2 {
  		display: block;
- 		background-color: rgba(44,44,44,.8);
  		color: #ffffff;
- }
+		position:absolute;
+		top:90%;
+		background-color: rgba(44,44,44,.8);
+		padding: 1.375em;
+ 	}
  	.project:hover > img {
 		opacity: 1;
-}
+	}
 	.projectpages {
-	margin-left: 0;
-}
+		margin: auto;
+	}
 	.description {
-	width: 75%;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;
-}
-	.projectimages {
-	margin-left: 0;
-	width: 95%;
-}
-}
- @media only screen and (max-width: 800px) {
- 	.project {
- 		width: 100%;
- 	}
-}
+		width: 75%;
+		margin: auto;
+		text-align: left;
+		padding-bottom: 1.5em;
+	}
+/*	.projectimages {
+		margin: auto;
+	}
+}*/
  @media only screen and (max-width: 682px) {
  	.logo {
  		display: block;
@@ -251,11 +248,19 @@ hr {
  		text-align: center;
  		margin-right: 0;
 	}
+		.description {
+		text-align: center;
+}
 	header {
 		padding: 2.25em 0;
 }
 	footer {
 		padding: 2.25em 0;
+	}
+}
+@media only screen and (max-width: 621px) {
+	h2 {
+		font-size: 1em;
 	}
 }
 @media only screen and (max-width: 475px) {
@@ -268,5 +273,31 @@ hr {
 	footer {
 		padding: 1.5em 0;
 		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 435px) {
+	h2 {
+		font-size: .75em;
+}
+	h4 {
+ 		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 318px) {
+	h2 {
+		font-size: .5em;
+	}
+}
+@media only screen and (max-width: 233px) {
+	h2 {
+		font-size: .25em;
+	}
+}
+@media only screen and (max-width: 185px) {
+	h3 {
+		font-size: 1em;
+	}
+	h4 {
+		font-size: .75em
 	}
 }
