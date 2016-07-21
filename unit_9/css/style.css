@@ -34,18 +34,14 @@ nav {
 nav a:hover, a:active  {
 	color: #DCDCDC;
 }
-.grid {
-	margin: 0px 5px;
-}
-.bottom {
-	clear: both
+#portfolio {
+	margin: 0 .5em .5em .5em;
 }
 .project {
 	float:left;
 	position:relative;
 	width: 50%;
-	padding: 5px;
-
+	line-height: 0;
 }
 .project:hover {
 	background-color: #2c2c2c;
@@ -55,6 +51,9 @@ nav a:hover, a:active  {
 }
 .project:hover > img {
 	opacity: 0.15;
+}
+.clearfix {
+  overflow: hidden;
 }
 h2 {
 	font-family: 'Raleway', sans-serif;
@@ -77,24 +76,35 @@ h2 {
 .project:hover > h2 {
 	display: block;
 }
-.description {
-	float: left;
-	width: 30%;
+.projectpages {
 	margin-top: 1.5em;
-	margin-left: 6.25em;
+	margin-left: 6.5em;
+}
+.description {
+	width: 20%;
+	float: left;
+	margin-right: 2.5em;
+	margin-bottom: 1.5em;
 }
 .about {
 	float: left;
 	width: 50%;
 	padding-top: 1.5em;
 	margin-left: 6.25em;
+	margin-bottom: 6.25em;
 }
 .projectimages {
-	margin-top: 1.5em;
-	float: right;
+	display: block;
+	float: left;
+	width: 35%;
+	margin-bottom: 2.5em;
 }
 .projectimages img {
 	margin-bottom: 1.5em;
+}
+.gridbottom {
+	clear: both;
+	margin: 0 .5em .5em .5em;
 }
 h3 {
 	font-family: 'Raleway', sans-serif;
@@ -104,6 +114,8 @@ h3 {
 	color: #2c2c2c;
 	border-top: .09375em solid #dcdcdc;
 	padding-top: .375em;
+	margin-bottom: .75em;
+	display: inline-block;
  }
  h4 {
 	font-family: 'Raleway', sans-serif;
@@ -163,10 +175,13 @@ footer {
 .button:hover a{
 	color: #ffffff; 
 }
-.footersvg img{
+svg#Capa_1 {
 	width: 1.75em;
 	padding-top: .75em;
-	margin-right: .125em;
+	fill: 2c2c2c;
+}
+svg#Capa_1:hover {
+	fill: #b3493c;
 }
 hr {
 	width: 37%;
@@ -188,23 +203,44 @@ hr {
  	.project {width: 33.33%;
  	}
 }
+@media only screen and (max-width: 1175px) {
+	.description {
+	width: 77%;
+	float: none;
+}
+	.projectimages {
+	float: none;
+}
+}
  @media only screen and (max-width: 1024px) {
  	.project h2 {
  		display: block;
- 		background-color: rgba(44,44,44,.75);
+ 		background-color: rgba(44,44,44,.8);
  		color: #ffffff;
- 		padding: .375em;
- 	}
-
+ }
  	.project:hover > img {
 		opacity: 1;
+}
+	.projectpages {
+	margin-left: 0;
+}
+	.description {
+	width: 75%;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+	.projectimages {
+	margin-left: 0;
+	width: 95%;
+}
 }
  @media only screen and (max-width: 800px) {
  	.project {
  		width: 100%;
  	}
 }
- @media only screen and (max-width: 665px) {
+ @media only screen and (max-width: 682px) {
  	.logo {
  		display: block;
  		text-align: center;
