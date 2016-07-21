@@ -35,7 +35,8 @@ nav a:hover, a:active  {
 	color: #DCDCDC;
 }
 #portfolio {
-	margin: 0 .5em .5em .5em;
+	margin: 0 0 .5em 0;
+
 }
 .project {
 	float:left;
@@ -101,10 +102,12 @@ h2 {
 }
 .projectimages img {
 	margin-bottom: 1.5em;
+		margin-right: 2.5em;
+
 }
 .gridbottom {
 	clear: both;
-	margin: 0 .5em .5em .5em;
+	margin: 0 0 .5em 0;
 }
 h3 {
 	font-family: 'Raleway', sans-serif;
@@ -225,7 +228,9 @@ hr {
 		opacity: 1;
 	}
 	.projectpages {
+		width: 100%;
 		margin: auto;
+		text-align: center;
 	}
 	.description {
 		width: 75%;
@@ -233,10 +238,16 @@ hr {
 		text-align: left;
 		padding-bottom: 1.5em;
 	}
-/*	.projectimages {
+	.projectimages {
+		width: 100%;
 		margin: auto;
+		text-align: center;
 	}
-}*/
+		.projectimages img{
+		width: 100%;
+	}
+
+}
  @media only screen and (max-width: 682px) {
  	.logo {
  		display: block;
