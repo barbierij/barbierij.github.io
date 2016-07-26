@@ -68,9 +68,6 @@ h2 {
 	top:50%;
 	width:100%;
 	text-align:center;
-	—webkit—transform:translateY(-50%);
-	—moz—transform:translateY(-50%);
-	—o—transform:translateY(-50%);
 	transform:translateY(-50%);
 	display: none;
 }
@@ -220,7 +217,9 @@ hr {
  		display: block;
  		color: #ffffff;
 		position:absolute;
-		top:90%;
+		top: initial;
+		bottom:10%;
+		transform:translateY(50%);
 		background-color: rgba(44,44,44,.8);
 		padding: 1.375em;
  	}
@@ -278,6 +277,9 @@ hr {
  	.logo {
  		font-size: 1em;
 	}
+	.project {
+		width: 100%;
+	}
 	header {
 		padding: 1.5em 0;
 }
@@ -287,6 +289,7 @@ hr {
 	}
 }
 @media only screen and (max-width: 435px) {
+
 	h2 {
 		font-size: .75em;
 }
